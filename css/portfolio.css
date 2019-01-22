@@ -1,0 +1,305 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* stilimi ynë */
+
+::selection{
+	background-color: transparent;
+	color: darkorange;
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+[href='#']{
+	color: #047af8;
+}
+
+body{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.container{
+	height: 100vh;
+	width: 100vw;
+    display: grid;
+    grid-template-columns: 61.8% 38.2%;
+    grid-template-rows: 100%;
+	grid-template-areas: 'A B';
+	overflow: hidden;
+}
+
+.main{
+	background-color: #d9dce1;
+	grid-area: A;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: flex-start;
+}
+
+.prezantim{
+	width: 100%;
+	text-align: left;
+	color: #333;
+	z-index: 3;
+}
+
+.prezantim h1{
+	font-family: 'Staatliches', cursive;
+	position: relative;
+	font-size: 4em;
+	width: 27%;
+	margin-top: 3%;
+	top: 10%;
+	left: 10%;
+	background-color: #d9dce1;
+}
+
+.prezantim h6{
+	font-family: 'Raleway', sans-serif;
+	font-size: 2em;
+	width: 80%;
+	margin-left: 20%;
+	background-color: #d9dce1;
+}
+
+button{
+	background-color: darkorange;
+	color: #d9dce1;
+	margin-top: 10px;
+	width: 150px;
+	height: 50px;
+	font-size: 1.3em;
+	transition: 0.2s background-color;
+	border: none;
+	outline: none;
+}
+
+button:hover{
+	cursor: pointer;
+	background-color: #333;
+}
+
+.other{
+	background-color: #047af8;
+	grid-area: B;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	padding-bottom: 100px;
+	margin-bottom: 50px;
+	visibility: hidden;
+}
+
+nav a{
+	font-family: 'Raleway', sans-serif;
+	font-size: 3em;
+	line-height: 1.3em;
+	text-decoration: none;
+	color: #d9dce1;
+	font-weight: 700;
+	opacity: 0;
+	z-index: 4;
+	transition: 0.3s color;
+}
+
+nav a:hover:not([href='#']){
+	color: #047af8;
+}
+
+.gjysmerreth{
+	position: relative;
+	align-self: flex-start;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background-color: #333;
+	left: calc(100% - 100px);
+	right: 0;
+	margin-top: -100px;
+	margin-right: -100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-start;
+	z-index: 4;
+	transition: 0.3s transform cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.contact{
+	position: relative;
+	box-sizing: border-box;
+	width: 100%;
+	height: 170px;
+	padding: 7% 20%;
+	margin-bottom: 15%;
+	font-family: 'Raleway', sans-serif;
+	color: #d9dce1;
+	font-weight: 700;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	opacity: 0;
+	z-index: 4;
+	transition: 0.3s opacity cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.contact svg{
+	margin-right: 10px;
+}
+
+.off{
+	position: absolute;
+	font-size: 1.7em;
+	top: 20px;
+	right: 20px;
+	z-index: 5;
+	transition: 0.3s transform cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.svg-inline--fa path{
+	fill: #d9dce1;
+}
+
+.svg-inline--fa:hover{
+	cursor: pointer;
+}
+
+.fa-times{
+	display: none;
+}
+
+
+/* jashtë flow-it */
+
+.desc{
+	position: absolute;
+	width: 61.2vw;
+	height: 100vh;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #047af8;
+}
+
+.desc span{
+	overflow: hidden;
+}
+
+.desc span:first-child{
+	font-family: Anton, sans-serif;
+	font-size: 8em;
+	width: 80%;
+	left: 10%;
+	z-index: 6;
+}
+
+.desc span:last-child{
+	font-family: Anton, sans-serif;
+	position: relative;
+	font-size: 8em;
+	color: #333;
+	width: 40%;
+	left: 10%;
+	font-family: 'Raleway', sans-serif;
+	font-size: 2em;
+	justify-self: start;
+	align-self: flex-start;
+	z-index: 4;
+}
+
+.photos{
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.photo{
+	position: absolute;
+	width: 60%;
+	margin-left: 11.8%;
+	box-shadow: -2px 4px 33px 0px rgba(0,0,0,0.75);
+	background-position: 50%;
+	z-index: 5;
+	transition: height 0.5s ease-in, top 0.5s ease-in;
+	height: 0;
+	bottom: 40px;
+	background-size: cover;
+	transition: 0.5s margin-left cubic-bezier(0.23, 1, 0.320, 1), 0.7s width cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.photo:first-child{
+	height: 75%;
+	bottom: 12.5%;
+}
+
+
+
+
