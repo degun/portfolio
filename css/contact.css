@@ -244,50 +244,106 @@ nav a:hover:not([href='#']){
 	z-index: 4;
 }
 
-.photos{
+.kontakt{
 	position: absolute;
-	width: 100vw;
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
-.photoInitial{
-	position: absolute;
-	width: 60%;
-	margin-left: 11.8%;
-	/* box-shadow: -2px 4px 33px 0px rgba(0,0,0,0.75); */
+    width: 60%;
+    height: 75%;
+    top: 12.5%;
 	background-position: 50%;
 	z-index: 5;
 	transition: height 0.5s ease-in, top 0.5s ease-in;
-	height: 0;
-	bottom: 40px;
-	top: unset;
 	background-size: cover;
-	height: 75%;
-	top: 12.5%;
-	background-image: url('../imazhet/hero.jpg');
-	cursor: pointer;
-	transition: 0.5s margin-left cubic-bezier(0.23, 1, 0.320, 1), 0.7s width cubic-bezier(0.23, 1, 0.320, 1);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
 }
 
-.photo{
-	position: absolute;
-	width: 60%;
-	margin-left: 11.8%;
-	/* box-shadow: -2px 4px 33px 0px rgba(0,0,0,0.75); */
-	background-position: 50%;
-	z-index: 5;
-	transition: height 0.5s ease-in, top 0.5s ease-in;
-	height: 0;
-	bottom: 40px;
-	top: unset;
-	background-size: cover;
-	cursor: pointer;
-	transition: 0.5s margin-left cubic-bezier(0.23, 1, 0.320, 1), 0.7s width cubic-bezier(0.23, 1, 0.320, 1);
+.bardh{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+	align-content: center;
+	flex-grow: 1.618;
+    background-color: white;
 }
+
+.bardh h1{
+    font-family: Staatliches, cursive;
+    font-size: 4em;
+    color: #333;
+    margin-left: 15%;
+    margin-bottom: 30px;
+}
+
+form{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+}
+
+form > *{
+    width: 70%;
+    margin: 0 15%;
+}
+
+form input{
+    font-size: 2em;
+    outline: none;
+    border: none;
+    border-bottom: 1px dashed #999;
+}
+
+form textarea{
+    border: 1px dashed #999;
+    padding: 10px;
+    font-size: 2em;
+}
+
+form textarea:focus{
+    outline: none;
+}
+
+
+form button{
+    width: 20%;
+    align-self: center;
+    font-size: 1.3em;
+    background-color: darkorange;
+    padding: 10px;
+    color: white;
+    font-family: Raleway, sans-serif;
+	cursor: pointer;
+	outline: none;
+	border: none;
+}
+
+.zi{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: #333;
+    color: #d9dce1;
+    font-size: 1.3em;
+	line-height: 1.5em;
+	flex-grow: 1;
+}
+
+.zi > *{
+    width: 60%;
+    margin-left: 20%;
+}
+
+.zi .social *{
+    margin-right: 10px;
+}
+
+
+
 
 
 

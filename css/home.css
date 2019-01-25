@@ -87,6 +87,7 @@ body{
 	width: 45%;
 	text-align: right;
 	color: #333;
+	opacity: 0;
 	z-index: 3;
 }
 
@@ -231,7 +232,7 @@ nav a:hover{
 	background-size: cover;
 	background-position: 50%;
 	margin-left: 11.8%;
-	box-shadow: -2px 4px 33px 0px rgba(0,0,0,0.75);
+	/* box-shadow: -2px 4px 33px 0px rgba(0,0,0,0.75); */
 	z-index: 5;
 	transition: 0.5s margin-left cubic-bezier(0.23, 1, 0.320, 1), 0.7s width cubic-bezier(0.23, 1, 0.320, 1);
 }

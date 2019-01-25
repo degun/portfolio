@@ -3,7 +3,7 @@ const works = [
         name: 'Destil Hostel',
         date: '12/01/2018',
         photo: '../imazhet/DestilHostel/1.jpg',
-        photos: ['../imazhet/DestilHostel/1.jpg','../imazhet/DestilHostel/2.jpg','../imazhet/DestilHostel/3.jpg','../imazhet/DestilHostel/4.jpg','../imazhet/DestilHostel/5.jpg', '../imazhet/Destil Hostel/5.jpg'],
+        photos: ['../imazhet/DestilHostel/1.jpg','../imazhet/DestilHostel/2.jpg','../imazhet/DestilHostel/3.jpg','../imazhet/DestilHostel/4.jpg','../imazhet/DestilHostel/5.jpg', '../imazhet/DestilHostel/6.jpg'],
         type: 'software',
         description: 'Përshkrimi i projektit për Destil Hostel'
     },
